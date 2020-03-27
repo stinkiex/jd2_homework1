@@ -1,5 +1,7 @@
 <html>
 <body>
-<h2>Hello World!</h2>
+<h2>Welcome</h2>
+
+<b>Curent time is </b> <%= new java.util.Date() %>
 </body>
 </html>
