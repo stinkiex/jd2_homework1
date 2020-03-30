@@ -1,3 +1,5 @@
+package by.itacademy;
+
 public class AuthUser {
     private String login;
     private String password;

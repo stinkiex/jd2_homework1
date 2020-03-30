@@ -1,3 +1,5 @@
+package by.itacademy;
+
 public class User {
     private String firstName;
     private String lastName;
@@ -33,7 +35,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "by.itacademy.User{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", phone='" + phone + '\'' +

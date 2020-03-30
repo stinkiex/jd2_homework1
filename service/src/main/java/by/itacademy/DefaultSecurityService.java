@@ -1,3 +1,5 @@
+package by.itacademy;
+
 public class DefaultSecurityService implements SecurityService {
     private AuthUserDao authUserDao = DefaultAuthUserDao.getInstance();
 

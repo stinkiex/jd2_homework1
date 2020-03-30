@@ -1,3 +1,5 @@
+package by.itacademy;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,9 +11,9 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@WebServlet(name = "StudentServlet")
+@WebServlet(name = "by.itacademy.StudentServlet")
 public class StudentServlet extends HttpServlet {
-    private static final Logger log = LoggerFactory.getLogger(StudentsServlet.class);
+    private static final Logger log = LoggerFactory.getLogger(StudentServlet.class);
     private UserService userService = DefaultUserService.getInstance();
 
     @Override

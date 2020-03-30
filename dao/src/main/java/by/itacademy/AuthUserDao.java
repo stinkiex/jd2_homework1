@@ -1,3 +1,5 @@
+package by.itacademy;
+
 public interface AuthUserDao {
     AuthUser getByLogin(String login);
 

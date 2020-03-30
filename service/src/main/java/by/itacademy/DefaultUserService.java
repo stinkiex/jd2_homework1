@@ -1,3 +1,5 @@
+package by.itacademy;
+
 import java.util.List;
 
 public class DefaultUserService implements UserService {

@@ -1,3 +1,5 @@
+package by.itacademy;
+
 import java.util.HashMap;
 import java.util.Map;
 

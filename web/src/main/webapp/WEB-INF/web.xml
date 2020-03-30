@@ -10,7 +10,7 @@ http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 
   <servlet>
     <servlet-name>CalculateNalogs</servlet-name>
-    <servlet-class>CalculateNalog</servlet-class>
+    <servlet-class>by.itacademy.CalculateNalog</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>CalculateNalogs</servlet-name>
