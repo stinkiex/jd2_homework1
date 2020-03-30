@@ -12,7 +12,7 @@ public class RegisterServlet extends HttpServlet {
         String login = req.getParameter("login");
         String password = req.getParameter("password");
         String repassword = req.getParameter("repassword");
-        AuthUser user = securityService.login(login, password);
+        AuthUser user = securityServices.login(login, password);
         if (repassword != password){
             req.setAttribute("error", "Password and Confirm password not match");
         }
