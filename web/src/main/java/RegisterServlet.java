@@ -13,7 +13,10 @@ public class RegisterServlet extends HttpServlet {
         String password = req.getParameter("password");
         String repassword = req.getParameter("repassword");
         AuthUser user = securityService.login(login, password);
-        if (login == null) {
+        if (repassword != password){
+            req.setAttribute("error", "Password and Confirm password not match");
+        }
+        if (login == user.getLogin() ) {
             req.setAttribute("error", "login already exist");
             WebUtils.forword("register", req, resp);
         }
