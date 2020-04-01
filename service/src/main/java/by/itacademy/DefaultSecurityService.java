@@ -28,4 +28,20 @@ public class DefaultSecurityService implements SecurityService {
         }
         return null;
     }
+
+    public static boolean checkAlreadyExistsUser(String login){
+        boolean flag = false;
+        DefaultAuthUserDao defaultAuthUserDao = new DefaultAuthUserDao();
+        if(defaultAuthUserDao.userByLogin.containsKey(login)) {
+            flag = true;
+        }
+        return flag;
+    }
+
+    public static void createUser(String login, String password){
+        if (checkAlreadyExistsUser(login) == false) {
+            DefaultAuthUserDao defaultAuthUserDao = new DefaultAuthUserDao();
+            defaultAuthUserDao.userByLogin.putIfAbsent(login, new AuthUser(login, password, Role.STUDENT, null));
+        }
+    }
 }

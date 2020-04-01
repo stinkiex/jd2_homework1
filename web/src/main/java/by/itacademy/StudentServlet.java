@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@WebServlet(name = "by.itacademy.StudentServlet")
+@WebServlet(name = "/students")
 public class StudentServlet extends HttpServlet {
     private static final Logger log = LoggerFactory.getLogger(StudentServlet.class);
     private UserService userService = DefaultUserService.getInstance();
@@ -20,7 +20,7 @@ public class StudentServlet extends HttpServlet {
     protected void doGet(HttpServletRequest rq, HttpServletResponse rs) {
         List<User> students = userService.getStudents();
         rq.setAttribute("students", students);
-        WebUtils.forword("student", rq, rs);
+        WebUtils.forword("students", rq, rs);
     }
 
     @Override

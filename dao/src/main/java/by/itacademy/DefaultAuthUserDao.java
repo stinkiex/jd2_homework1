@@ -6,6 +6,10 @@ import java.util.Map;
 public class DefaultAuthUserDao implements AuthUserDao {
     Map<String, AuthUser> userByLogin;
 
+    public Map<String, AuthUser> getUserByLogin() {
+        return userByLogin;
+    }
+
     public DefaultAuthUserDao() {
         this.userByLogin = new HashMap<>();
         this.userByLogin.putIfAbsent("admin",
