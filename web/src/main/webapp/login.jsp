@@ -16,6 +16,7 @@
 
 <h3>Login</h3>
 <form action="${pageContext.request.contextPath}/login" method="post">
+    <legend>Sign in:</legend>
     <label for="login">login</label>
     <input id="login" type="text" name="login"> <br/>
 
