@@ -9,11 +9,11 @@ http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
   <display-name>My Servlet Application</display-name>
 
   <servlet>
-    <servlet-name>HelloServlet</servlet-name>
-    <servlet-class>HelloServlet</servlet-class>
+    <servlet-name>CalculateNalogs</servlet-name>
+    <servlet-class>by.itacademy.CalculateNalog</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>HelloServlet</servlet-name>
-    <url-pattern>/sayhello</url-pattern>
+    <servlet-name>CalculateNalogs</servlet-name>
+    <url-pattern>/calcnalogs/</url-pattern>
   </servlet-mapping>
 </web-app>
